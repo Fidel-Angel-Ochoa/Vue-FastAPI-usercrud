@@ -1,0 +1,29 @@
+# Ignore compiled Python files
+*.pyc
+__pycache__/
+
+# Ignore virtual environment directories
+venv/
+env/
+.venv/
+
+# Ignore Node.js related files and directories
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Ignore Vue build output
+/dist/
+/dist-ssr/
+/*.js.map
+
+# Ignore Vue CLI service output
+/node_modules/.cache/
+/.eslintcache
+/.browserslistrc
+
+# Ignore IDE and editor-specific files
+.vscode/
+
+
+
