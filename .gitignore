@@ -14,6 +14,7 @@ yarn-error.log
 
 # Ignore Vue build output
 /dist/
+dist/
 /dist-ssr/
 /*.js.map
 
@@ -25,5 +26,6 @@ yarn-error.log
 # Ignore IDE and editor-specific files
 .vscode/
 
+.nuxt/
 
 
