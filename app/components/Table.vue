@@ -45,7 +45,7 @@
     async fetch() {
       this.$store.commit(
         "users/storeData",
-        (await this.$axios.get("http://localhost:8000/users")).data
+        (await this.$axios.get("https://vue-fastapi-backend.onrender.com/users")).data
       );
     },
     // check how this code is working
@@ -58,8 +58,8 @@
         this.$store.commit("user/storePassword",user.password)
       },
       async deleteItem(id){
-        await this.$axios.delete("http://localhost:8000/users/"+id);
-        this.$store.commit("users/storeData",(await this.$axios.get("http://localhost:8000/users")).data)
+        await this.$axios.delete("https://vue-fastapi-backend.onrender.com/users/"+id);
+        this.$store.commit("users/storeData",(await this.$axios.get("https://vue-fastapi-backend.onrender.com/users")).data)
       }
     }
   };

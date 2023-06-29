@@ -54,12 +54,12 @@ export default {
   methods:{
     async submitUser(user){
       if (user.id) {
-        await this.$axios.put("http://localhost:8000/users/"+user.id, user)
+        await this.$axios.put("https://vue-fastapi-backend.onrender.com/users/"+user.id, user)
       } else {
-        await this.$axios.post("http://localhost:8000/users/", user);
+        await this.$axios.post("https://vue-fastapi-backend.onrender.com/users/", user);
       }
       await this.resetForm({id:0, name:'', email:'', password:''});
-      await this.$store.commit("users/storeData", (await this.$axios.get("http://localhost:8000/users/")).data)
+      await this.$store.commit("users/storeData", (await this.$axios.get("https://vue-fastapi-backend.onrender.com/users/")).data)
     },
     resetForm(user) {
       this.$store.commit("user/storeId",user.id);
